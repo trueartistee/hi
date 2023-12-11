@@ -1,0 +1,41 @@
+body{
+    background-color: lightgray;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+.click{
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    animation: grow 2s infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    
+}
+.click:hover{
+    background-color: black;
+    color: white;
+}
+#first, #second{
+    visibility: hidden;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes grow{
+    to{font-size: 30px}
+}
